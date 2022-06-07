@@ -1,0 +1,556 @@
+/* ==========================================================================================
+FONTS
+========================================================================================== */
+@font-face{
+    font-family: webfont;
+    src: url(./../fonts/fontawesome-webfont.ttf)
+}
+
+/* ==========================================================================================
+BASIC
+========================================================================================== */
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    box-sizing: border-box!important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    transition: 0.5s;
+}
+
+a:hover{
+    color: #ED563B;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+.d-flex{
+    display: flex;
+}
+
+.d-grid{
+    display: grid;
+}
+
+.d-none{
+    display: none;
+}
+
+.pos-fixed{
+    position: fixed;
+}
+
+.pos-relative{
+    position: relative;
+}
+
+.pos-absolute{
+    position: absolute;
+}
+
+.org-red-color{
+    color: #ED563B!important;
+}
+
+.white-color{
+    color: #fff;
+}
+
+.black-color{
+    color: #000;
+}
+
+.light-black-color{
+    color: #232D39;
+}
+
+.gray-color{
+    color: #7A7A7A;
+}
+
+button{
+    color: #fff;
+    background-color: #ED563B;
+    /* font-weight: 600; */
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    padding: 8px 16px;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: #F9735B;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.height-100vh{
+    height: 100vh;
+}
+
+/* ==========================================================================================
+HEADER
+========================================================================================== */
+header{
+    background-color: rgba(35,45,57,0.8);
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.logo span{
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.background-video{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1000;
+}
+
+/* ==========>>>>>>>> BANNER */
+
+.banner{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding-bottom: 150px;
+}
+
+.banner-header{
+    font-size: 40px;
+    margin: 5vh;
+}
+
+.banner-header span{
+    font-size: inherit;
+}
+
+.banner-descript{
+    font-size: 24px;
+}
+
+.banner button{
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+/* ==========>>>>>>>> NAVBAR */
+nav{
+    width: 100%;
+    min-height: 85px;
+    background-color: #fff;
+    grid-template-columns: repeat(2 , auto);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.nav-list li{
+    padding: 8px 1vw;
+    margin-top: 8px;
+}
+
+.nav-list li:last-of-type{
+    margin: 0;
+}
+
+.show-bar{
+    display: grid!important;
+    justify-content: center;
+    margin-top: 10px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: #000;
+}
+
+.show-bar li{
+    margin-left: 8px;
+}
+
+.bar-fixed{
+    position: fixed;
+    background-color: #f8f9fa;
+    z-index: 100;
+    transition: 0.5s;
+    box-shadow: 10px 10px 24px 2px inset #888888, -10px -10px 24px 2px inset #888888;
+}
+
+.bar-fixed span:first-of-type{
+    color: #000!important;
+}
+
+.bar-fixed li{
+    color: #000!important;
+}
+
+
+/* ==========================================================================================
+MAIN
+========================================================================================== */
+
+/* ==========>>>>>>>> CHOOSE PROGRAM */
+.choose-program{
+    justify-content: center;
+    padding: 150px 0;
+}
+
+.header-program{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto 75px;
+}
+
+.header-program h3{
+    font-size: 20px;
+}
+
+.header-program span{
+    font-size: inherit;
+}
+
+.header-program img{
+    margin: 16px 0;
+}
+
+.choose-program p{
+    color: #7A7A7A;
+    line-height: 30px;
+}
+
+.programs{
+    justify-content: center;
+    gap: 40px;
+}
+
+.programs article{
+    width: 90vw;
+    margin-bottom: 35px;
+}
+
+.programs article img{
+    margin-right: 5%;
+}
+
+.article-info h4{
+    font-size: 1.2em;
+    font-weight: 550;
+}
+
+.article-info p{
+    line-height: 24px;
+    margin: 8px 0;
+}
+
+/* ==========>>>>>>>> BEGIN TODAY */
+.begin-today{
+    background-image: url(./../images/cta-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
+    padding: 50px 0;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.begin-today h3 span{
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.begin-today p{
+    font-size: 16px;
+    font-weight: normal;
+    width: 70%;
+    margin: 2vw 0;
+}
+
+/* ==========>>>>>>>> OUR CLASS */
+.our-class{
+    padding: 150px 0 0;
+}
+
+.our-class-content{
+    justify-items: center;
+}
+.training-titles{
+    margin-bottom: 75px;
+}
+
+.training-titles li{
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 15px 2px #f2f3f5, -10px -10px 15px 2px #f2f3f5;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 5% 10%;
+    cursor: pointer;
+}
+
+.training-titles li:hover p{
+    color: #ED563B;
+}
+
+.training-titles li:last-of-type{
+    box-shadow: none;
+    padding: 0;
+}
+
+.training-titles li:last-of-type button{
+    width: 100%;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.training-titles li img{
+    margin-right: 25px;
+}
+
+.training-titles li p{
+    font-size: 1.2em;
+    transition: color 0.5s;
+}
+
+.trainings{
+    width: 60%;
+}
+
+.training{
+    width: 100%;
+}
+
+.training>*{
+    margin-bottom: 28px;
+}
+
+.training img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.training h4{
+    font-size: 1.5em;
+}
+
+.training p{
+    font-size: 16px;
+    line-height: 25px;
+}
+
+/* ====================>>>>>>>>>> CLASS SCHEDULES <<<<<<<<<<==================== */
+.schedules{
+    padding: 150px 0;
+    background-image: url(./../images/schedule-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.schedule-header{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.schedule-header h3{
+    font-size: 20px;
+}
+
+.schedule-header h3 span{
+    font-size: inherit;
+}
+
+.schedule-header p{
+    font-family: 'Poppins', sans-serif;
+    width: 90%;
+}
+
+.schedule-header img{
+    margin: 25px 0;
+}
+
+.schedule-table{
+    justify-content: center;
+    row-gap: 25px;
+}
+
+.days-list{
+    text-align: center;
+}
+
+.days-list li{
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.5s;
+    padding: 0 5px;
+    margin: 0 10px;
+}
+
+.days-list li:hover{
+    color: #ED563B!important;
+}
+
+.schedule-table table{
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.schedule-table table td{
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 1px;
+}
+/* ====================>>>>>>>>>> XX CLASS SCHEDULES XX <<<<<<<<<<==================== */
+
+/* ====================>>>>>>>>>> CLASS EXPERT <<<<<<<<<<==================== */
+.expert-trainer{
+    padding: 150px 0;
+}
+
+.trains{
+    justify-content: center;
+}
+
+.train{
+    flex-direction: column;
+    width: calc(100% - 80px);
+    margin: 0 auto 75px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    transition: 0.5s;
+}
+
+.train:hover{
+    box-shadow: 10px 10px 15px 2px #f2f3f5, -10px -10px 15px 2px #f2f3f5;
+    transform: translateY(-20px);
+}
+
+.train img{
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.type-train{
+    margin-bottom: 10px;
+}
+
+.coach-name{
+    margin-bottom: 20px;
+}
+
+.coach-descript{
+    margin-bottom: 20px;
+    line-height: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.social-media-coach{
+    display: flex;
+}
+
+.social-media-coach li{
+    margin-right: 15px;
+}
+/* ====================>>>>>>>>>> XX CLASS EXPERT XX <<<<<<<<<<==================== */
+
+/* ==========================================================================================
+END MAIN
+========================================================================================== */
+
+/* ==========================================================================================
+FOOTER
+========================================================================================== */
+footer{
+
+}
+
+footer form{
+    background-color: #fff;
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+}
+
+footer ::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: smaller;
+}
+
+footer Button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: smaller;
+}
+
+.footer-content{
+
+}
+
+.footer-content>*{
+    height: 80vh;
+}
+
+.comment{
+    background-image: url(./../images/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    justify-content: center;
+    align-items: center;
+}
+
+input,textarea{
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    outline: 0;
+    border: 1px solid #888888;
+    color: #7A7A7A;
+}
+
+
+input[type=text]{
+    width: calc(50% - 13px);
+}
+
+input[type=text]:first-child{
+    margin-right: 20px!important;
+}
+/* ==========================================================================================
+END FOOTER
+========================================================================================== */
